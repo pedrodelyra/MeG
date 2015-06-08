@@ -43,7 +43,7 @@ public class HistoricoServlet extends HttpServlet {
 	 */
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		UtilDAO dao = new UtilDAO();
+		/*UtilDAO dao = new UtilDAO();
 		int idRanking = 1;
 		int idCompara = 2;
 		int idProjecao = 3;
@@ -59,7 +59,7 @@ public class HistoricoServlet extends HttpServlet {
 		request.setAttribute("compara", numeroAcessoCompara);
 		request.setAttribute("projecao", numeroAcessoProjecao);
 		request.setAttribute("grafico", numeroAcessoGrafico);
-		request.getRequestDispatcher("WEB-INF/jsp/historico-acesso.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/historico-acesso.jsp").forward(request, response);*/
 	}
 
 }
