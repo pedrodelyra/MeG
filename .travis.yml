@@ -6,4 +6,3 @@ jdk:
 script:
 - mvn test
 - mvn install -DskipTests=true
-	
