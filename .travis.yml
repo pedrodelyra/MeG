@@ -3,6 +3,16 @@ language: java
 jdk:
 - openjdk7
 
+before_script:
+- mysql < MeG/SQL/tabelas_iniciais.sql
+- source administrador.sql
+- source estados.sql
+- source noticias.sql
+- source secao.sql
+- source descricao.sql
+- source historico.sql
+- source salarioMinimo.sql
+
 script:
 - cd MeG
 - mvn test
