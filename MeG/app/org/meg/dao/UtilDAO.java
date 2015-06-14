@@ -8,14 +8,16 @@ import java.util.ArrayList;
 
 import org.meg.exception.DAOException;
 import org.meg.model.Noticia;
+
 import java.util.List;
+
 import org.meg.model.Erro;
 
 public class UtilDAO {
 	private Connection connection;
 
 	public UtilDAO() {
-		this.connection = ConnectionFactory.getConnection();
+		this.connection = new ConnectionFactory().getConnection();
 	}
 
 	/**

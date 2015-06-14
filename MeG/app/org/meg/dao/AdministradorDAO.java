@@ -15,7 +15,7 @@ public class AdministradorDAO {
 	 * Cria uma conexão com o banco de dados através da classe ConnectionFactory. 
 	 */
 	public AdministradorDAO() {
-		this.connection = ConnectionFactory.getConnection();
+		this.connection = new ConnectionFactory().getConnection();
 	}
 	
 	/**
