@@ -20,12 +20,10 @@ import org.meg.controller.ProjecaoServlet;
 public class ProjecaoTest {
 	
 	private HttpServletRequest request;
-	private HttpServletResponse response;
-
 	@Before
 	public void setUp() throws Exception {
 		this.request = mock(HttpServletRequest.class);
-		this.response = mock(HttpServletResponse.class);
+		mock(HttpServletResponse.class);
 	}
 
 	@Test
