@@ -21,7 +21,7 @@ public class ConnectionFactory {
 	        String username = prop.getProperty("username").toString();
 	        String password = prop.getProperty("password").toString();
 	        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-			return DriverManager.getConnection(host, username, password);
+			return DriverManager.getConnection(host);
 		}catch (IOException | SQLException exception) {
 			throw new DAOException("Falha ao criar conexao, a seguinte excecao foi lancada: "
 										+ exception.getMessage(), "ConnectionFactory");
