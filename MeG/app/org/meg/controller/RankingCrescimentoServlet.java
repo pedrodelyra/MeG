@@ -77,16 +77,4 @@ public class RankingCrescimentoServlet extends HttpServlet {
 		resultado = ((valorFinal / valorInicial)-1) * 100;
 		return resultado;
 	}
-	
-	/**
-	 * Realiza uma troca entre dois elementos da lista
-	 * @param lista que possui os elementos que serão trocados
-	 * @param index1 índice do primeiro elemento 
-	 * @param index2 índice do segundo elemento
-	 */
-	private void troca(List<Quadro> lista, int index1, int index2) {
-		Quadro buffer = lista.get(index1);
-		lista.set(index1, lista.get(index2));
-		lista.set(index2, buffer);
-	}
 }

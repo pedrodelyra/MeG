@@ -1,0 +1,18 @@
+language: java
+
+jdk:
+- openjdk7
+
+before_script:
+- mysql < MeG/SQL/tabelas_iniciais.sql
+- mysql MEG < MeG/SQL/administrador.sql
+- mysql MEG < MeG/SQL/estados.sql
+- mysql MEG < MeG/SQL/noticias.sql
+- mysql MEG < MeG/SQL/secao.sql
+- mysql MEG < MeG/SQL/descricao.sql
+- mysql MEG < MeG/SQL/historico.sql
+- mysql MEG < MeG/SQL/salarioMinimo.sql
+
+script:
+- cd MeG
+- mvn test

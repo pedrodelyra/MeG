@@ -11,9 +11,9 @@ import org.meg.exception.DAOException;
 
 public class ConnectionFactory {
 	
-	private static Connection connection = createConnection();
+	private Connection connection = createConnection();
 
-	private static Connection createConnection(){
+	private Connection createConnection(){
 		try{
 	        Properties prop = new Properties();
 	        prop.load(new FileInputStream(System.getProperty("user.home") + "/mydb.cfg"));
@@ -21,15 +21,15 @@ public class ConnectionFactory {
 	        String username = prop.getProperty("username").toString();
 	        String password = prop.getProperty("password").toString();
 	        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-			return DriverManager.getConnection(host, username, password);
+			return DriverManager.getConnection(host, "travis", "");
 		}catch (IOException | SQLException exception) {
 			throw new DAOException("Falha ao criar conexao, a seguinte excecao foi lancada: "
 										+ exception.getMessage(), "ConnectionFactory");
 		}
     }
 	
-	public static Connection getConnection(){
-		return ConnectionFactory.connection;
+	public Connection getConnection(){
+		return connection;
 	}
 }
 

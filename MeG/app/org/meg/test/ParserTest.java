@@ -1,4 +1,4 @@
-package org.meg.test;
+/*package org.meg.test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -73,4 +73,4 @@ public class ParserTest {
 		this.parser.persist();
 	}
 
-}
+}*/
