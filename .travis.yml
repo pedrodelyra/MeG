@@ -4,14 +4,14 @@ jdk:
 - openjdk7
 
 before_script:
-mysql < MeG/SQL/tabelas_iniciais.sql
-mysql < MeG/SQL/administrador.sql
-mysql < MeG/SQL/estados.sql
-mysql < MeG/SQL/noticias.sql
-mysql < MeG/SQL/secao.sql
-mysql < MeG/SQL/descricao.sql
-mysql < MeG/SQL/historico.sql
-mysql < MeG/SQL/salarioMinimo.sql
+- mysql < MeG/SQL/tabelas_iniciais.sql
+- mysql < MeG/SQL/administrador.sql
+- mysql < MeG/SQL/estados.sql
+- mysql < MeG/SQL/noticias.sql
+- mysql < MeG/SQL/secao.sql
+- mysql < MeG/SQL/descricao.sql
+- mysql < MeG/SQL/historico.sql
+- mysql < MeG/SQL/salarioMinimo.sql
 
 script:
 - cd MeG
