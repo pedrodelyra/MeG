@@ -96,8 +96,7 @@ public class ProjecaoServlet extends HttpServlet {
 		request.getSession().setAttribute("secao", secao.getNome());
 		request.getSession().setAttribute("estado", estado.getNome());
 		
-		RequestDispatcher requestDispatcher = request
-				.getRequestDispatcher("projecao.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("projecao.jsp");
 		requestDispatcher.forward(request, response);
 	}
 

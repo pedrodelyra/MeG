@@ -36,7 +36,7 @@ public class QuadroDAOTest {
 	}
 	
 	public void createConnection(){
-		this.connection = ConnectionFactory.getConnection();
+		this.connection = new ConnectionFactory().getConnection();
 	}
 	
 	

@@ -19,7 +19,7 @@ public class QuadroDAO {
 	 * Cria uma conexão com o banco de dados através da classe ConnectionFactory. 
 	 */
 	public QuadroDAO() {
-		this.connection = ConnectionFactory.getConnection();
+		this.connection = new ConnectionFactory().getConnection();
 	}
 	
 	/**

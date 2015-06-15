@@ -54,6 +54,8 @@
 	</dependencies>
 	<build>
 		<finalName>MeG</finalName>
+		<sourceDirectory>app</sourceDirectory>
+		 <testSourceDirectory>app/org/meg/test</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

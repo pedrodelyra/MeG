@@ -11,9 +11,9 @@ import org.meg.exception.DAOException;
 
 public class ConnectionFactory {
 	
-	private static Connection connection = createConnection();
+	private Connection connection = createConnection();
 
-	private static Connection createConnection(){
+	private Connection createConnection(){
 		try{
 	        Properties prop = new Properties();
 	        prop.load(new FileInputStream(System.getProperty("user.home") + "/mydb.cfg"));
@@ -28,8 +28,8 @@ public class ConnectionFactory {
 		}
     }
 	
-	public static Connection getConnection(){
-		return ConnectionFactory.connection;
+	public Connection getConnection(){
+		return connection;
 	}
 }
 
